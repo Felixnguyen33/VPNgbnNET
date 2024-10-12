@@ -1,4 +1,4 @@
-# VP-NgbnNET
+# VPNgbnNET
 
 ## MainTraffic.ipynb 
 This notebook serves as the primary tool for training on real traffic estimation data.
