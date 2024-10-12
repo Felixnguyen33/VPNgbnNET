@@ -53,19 +53,8 @@ def data_preprocessing(input_len, window, t, day):
   X_train = np.concatenate((X[:t], X[t+1:]), axis=0)
   y_train = np.concatenate((y[:t], y[t+1:]), axis=0)
 
-
-  # X_train = X[0:4]
-  # y_train = y[0:4]
-  # X_train = X[0:total - 5]
-  # y_train = y[0:total - 5]
-
   X_test = X[t].reshape(1,input_len)
   y_test = y[t].reshape(1,window)
-
-  # X_test = X[total-5:]
-  # y_test = y[total-5:]
-
-  #---------
 
   dataset_train = {
     'samples': X_train,
